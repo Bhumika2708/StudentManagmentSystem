@@ -13,7 +13,7 @@ public class MainApp {
 
         Scanner scanner = new Scanner(System.in);  // ✅ declared once
 
-        // 🔐 Admin Login
+       
         while (attempts > 0) {
             System.out.print("Enter admin username: ");
             String user = scanner.nextLine();
@@ -37,7 +37,7 @@ public class MainApp {
             return;
         }
 
-        // 📚 Student Management Menu
+      
         StudentService studentService = new StudentService();
         boolean exit = false;
 
@@ -52,7 +52,7 @@ public class MainApp {
             System.out.print("Enter your choice (1-6): ");
 
             int choice = scanner.nextInt();
-            scanner.nextLine(); // consume newline
+            scanner.nextLine(); 
 
             switch (choice) {
                 case 1 -> {
@@ -60,7 +60,7 @@ public class MainApp {
                     String name = scanner.nextLine();
                     System.out.print("Enter age: ");
                     int age = scanner.nextInt();
-                    scanner.nextLine(); // consume newline
+                    scanner.nextLine(); 
                     System.out.print("Enter course: ");
                     String course = scanner.nextLine();
                     studentService.addStudent(name, age, course);
