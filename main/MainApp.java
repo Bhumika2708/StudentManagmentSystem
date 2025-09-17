@@ -11,7 +11,7 @@ public class MainApp {
         int attempts = 3;
         boolean loggedIn = false;
 
-        Scanner scanner = new Scanner(System.in);  // ✅ declared once
+        Scanner scanner = new Scanner(System.in); 
 
        
         while (attempts > 0) {
